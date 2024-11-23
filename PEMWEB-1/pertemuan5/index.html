@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamin Benefits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #a67c52, #8b6b4f);
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            position: relative;
+        }
+
+        .benefit-item {
+            position: relative;
+            margin-bottom: 50px;
+            padding-left: 30px;
+        }
+
+        .benefit-item::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+            color: #00ff00;
+        }
+
+        .benefit-item h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .benefit-item p {
+            font-size: 16px;
+            margin: 5px 0;
+            font-style: italic;
+        }
+
+        .line-path {
+            width: 100%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        .dotted-line {
+            border-bottom: 2px dotted #ffffff;
+            width: 80%;
+            height: 0;
+            margin: 10px 0 20px 20px;
+            position: relative;
+        }
+
+        .path {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ffffff;
+            opacity: 0.4;
+            top: 50%;
+            left: 0;
+            z-index: -1;
+        }
+
+        @media (min-width: 600px) {
+            .benefit-item:nth-child(odd) {
+                padding-right: 30px;
+            }
+
+            .benefit-item h3, .benefit-item p {
+                padding-left: 10px;
+            }
+
+            .benefit-item:nth-child(even)::before {
+                top: auto;
+                bottom: 0;
+            }
+
+            .benefit-item:nth-child(odd) .dotted-line {
+                margin-left: auto;
+                margin-right: 20px;
+                text-align: right;
+            }
+
+            .benefit-item:nth-child(even) .dotted-line {
+                margin-left: 20px;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="benefit-item">
+            <h3>1. Vitamin E</h3>
+            <p>Memiliki <em>anti aging</em> yang bisa mendorong perawatan kulit alami</p>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="benefit-item">
+            <h3>2. Vitamin K</h3>
+            <p>Membantu mencegah terjadinya <em>osteoporosis</em></p>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="benefit-item">
+            <h3>3. Vitamin B5</h3>
+            <p>Membantu menurunkan tingkat stress, meringankan rasa sakit</p>
+            <div class="dotted-line"></div>
+        </div>
+        <div class="benefit-item">
+            <h3>4. Vitamin B6</h3>
+            <p>Membantu <em>treat diabetes</em>, pendarahan menstruasi, insomnia</p>
+            <div class="dotted-line"></div>
+        </div>
+    </div>
+</body>
+</html>

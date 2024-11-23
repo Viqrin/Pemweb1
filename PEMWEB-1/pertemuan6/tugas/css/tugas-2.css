@@ -1,0 +1,61 @@
+/* styling box */
+body {
+    margin-left: 50px;
+    background-color: black;
+}
+
+.box {
+    width: 250px;
+    height: 600px;
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+}
+
+.red {
+    background-color: rgba(0, 255, 85, 0.842);
+    transform: translateY(20%); 
+    width: 10%;
+    height: 700px;
+}
+
+.yellow {
+background-color: rgb(229, 255, 0);
+transform: translateY(60%);
+width: 10%;
+height: 80px;
+margin-left: -153px;
+}
+
+.green {
+    background-color: rgb(190, 190, 190);
+    transform: translateY(3%); 
+    width: 70%;
+    height: 699px;
+    float: left;
+    margin-left: -10px;
+}
+
+.blue {
+    background-color: darkblue;
+    transform: translateY(-10%); 
+    width: 93%;
+    height: 80px;
+    float: left;
+}
+
+.yelow {
+background-color: rgb(255, 115, 0);
+width: 82%;
+height: 80px;
+transform: translateY(60%);
+margin-left: -10px;
+}
+
+.abu {
+    background-color: rgb(56, 189, 223);
+    width: 11%;
+    height: 700px;
+    transform: translateY(-120%);
+    margin-left: 1092px;
+}
