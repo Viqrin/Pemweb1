@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Booking.id</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lapangan.html">Penyewaan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Booking.html">Paket</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Penyewaan.html">Ukuran & Harga</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>                       
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <section class="signup-section" id="signup">
+            <div class="container px-5 my-5">
+                <div class="location">
+                    <h3>Lokasi Lapangan Futsal</h3>
+                    <p>Lapangan futsal kami berlokasi di:</p>
+                    <p><strong>Zeni Kostrad RT.5/RW.12, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630</strong></p>
+                    <p>Tempat ini mudah diakses dengan transportasi umum dan menyediakan area parkir luas untuk kendaraan pribadi.</p>
+                    <iframe class="map-iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9188474830645!2d-122.08405708469272!3d37.4219999798251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02f4465efb%3A0x60cf48a839cbe2c2!2sGoogleplex!5e0!3m2!1sen!2sid!4v1618344744444!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>              
+                <div class="booking-form">
+                    <h3>Booking Lapangan Futsal</h3>
+                    <form action="/submit_booking" method="post">
+                        <label for="name">Nama Penyewa:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="date">Tanggal Penyewaan:</label><br>
+                        <input type="date" id="date" name="date" required><br>
+                        <label for="time">Jam Penyewaan:</label><br>
+                        <input type="time" id="time" name="time" required><br>
+                        <label for="duration">Durasi (Jam):</label><br>
+                        <input type="number" id="duration" name="duration" min="1" required><br>
+                        <label for="extras">Fasilitas Tambahan:</label><br>
+                        <select id="extras" name="extras">
+                            <option value="none">Tidak Ada</option>
+                            <option value="lighting">Pencahayaan Tambahan</option>
+                            <option value="seating">Tempat Penonton</option>
+                        </select><br>
+                        <button type="submit">Submit Booking</button>
+                    </form>
+                </div>                  
+                </form>
+            </div>
+             <div class="login-container">
+                <h1>Login</h1>
+                  <form action="/submit-login" method="POST">
+                     <input type="text" name="username" placeholder="Username" required>
+                     <input type="password" name="password" placeholder="Password" required>
+                     <button type="submit">Login</button>
+                  </form>
+              <a href="/register">Don't have an account? Register</a>
+             </div>
+<div class="social-media">
+    <a href="https://github.com/Viqrin" target="https://github.com/Viqrin">GitHub</a>
+    <a href="https://www.linkedin.com/in/viqrin-danang-93b4b833b" target="https://www.linkedin.com/in/viqrin-danang-93b4b833b/">LinkedIn</a>
+    <a href="https://www.instagram.com/d_____g02/" target="https://www.instagram.com/d_____g02/">instagram</a>
+          </div>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>           
+        </section>
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Zeni Kostrad RT.5/RW.12, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">viqrindanang52@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">082333359279838</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Booking &copy; </div></footer>
+

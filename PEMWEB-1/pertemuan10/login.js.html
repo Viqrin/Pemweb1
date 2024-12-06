@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication</title>
+</head>
+  <body>
+    <form id="loginForm" onsubmit="login()">
+        <label for="username">username :</table>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <input type="submit" vlue="login">
+        <input type="reset" vlue="Batal">
+    </form>
+
+<!-- Program Javascrip -->
+    <script>
+    function login() {
+        // Mengambil nilai dari input username dan password dari form login
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+        let Form = document.getElementById ("laginForm");
+
+        if (user == "Viqrin" || pass == "12345") {
+            alert("Login Berhasil");
+            form.setAttribute("action", "UTS-PEMWEB-1/Home.html");
+            form.submit();
+        } else {
+            alert("Login Gagal,Cob Lagi");
+            
+        }
+
+
+    }
+    </script>
+</body>
+</html>
