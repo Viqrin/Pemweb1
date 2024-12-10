@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function jumlahkan() {
+            let x = parseFloat(document.getElementById("bi11").value);
+            let y = parseFloat(document.getElementById("bi12").value);
+            let z = 0;
+
+            if (document.getElementById("tambah").checked) {
+                z = x + y;
+            } else if (document.getElementById("kurang").checked) {
+                z = x - y;
+            } else if (document.getElementById("bagi").checked) {
+                z = x / y;
+            } else if (document.getElementById("kali").checked) {
+                z = x * y;
+            }
+
+            document.getElementById("hasil").innerHTML = z;
+        }
+    </script>
+</head>
+<body>
+    <div style="padding: 10px; background: 1px dotted red; background-color: blue;">
+        <h1><marquee onmouseover="this.stop()" onmouseout="this.start()">Konversi Kurs Bilangan</marquee></h1> 
+    <h2>Kalkulator Sederhana</h2>
+    <form action="javascript:void(0);">
+        Bilangan 1: <input type="text" id="bi11">
+        <br>
+        Bilangan 2: <input type="text" id="bi12">
+        <br>
+        Pilihan Operasi Aritmatika:
+        <input type="radio" name="ht" id="tambah"> +
+        <input type="radio" name="ht" id="kurang"> - 
+        <input type="radio" name="ht" id="bagi"> /
+        <input type="radio" name="ht" id="kali"> x
+        <br>
+        <input type="button" value="Hitung" onclick="jumlahkan()">
+        <br>
+        Hasil: <span id="hasil"></span>
+    </form>
+</body>
+</html>
